@@ -15,7 +15,8 @@ function addUserMessage(message) {
 // Function to add a bot message to the chat
 function addBotMessage(message) {
   const botMessage = document.createElement("div");
-  botMessage.textContent = message;
+  const md = window.markdownit(); // Create a new instance of markdown-it
+  botMessage.innerHTML = md.render(message);
   botMessage.classList.add("message", "bot");
   chat.appendChild(botMessage);
 }
