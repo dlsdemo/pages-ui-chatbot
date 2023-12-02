@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DLS RAG built on Workers AI - Experimental</title>
+    <meta
+      name="description"
+      content="Retrieval Augmented Generation (RAG) AI built on Cloudflare Workers AI with an User Interface deployed via Cloudflare Pages to ask questions related to Cloudflare Data Localization Suite (DLS)."
+    />
+    <meta
+      name="keywords"
+      content="chatbot, artificial intelligence, workers ai, cloudflare ai, data localization suite"
+    />
+
+    <!-- Open Graph Meta Tags (for sharing on social media) -->
+    <meta property="og:title" content="LLM Workers AI" />
+    <meta
+      property="og:description"
+      content="Retrieval Augmented Generation (RAG) AI built on Cloudflare Workers AI with an User Interface deployed via Cloudflare Pages to ask questions related to Cloudflare Data Localization Suite (DLS)."
+    />
+    <meta property="og:image" content="rag-ai-thumbnail.png" />
+    <meta property="og:url" content="https://ai.dlsdemo.com/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags (for sharing on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LLM Workers AI" />
+    <meta
+      name="twitter:description"
+      content="Retrieval Augmented Generation (RAG) AI built on Cloudflare Workers AI with an User Interface deployed via Cloudflare Pages to ask questions related to Cloudflare Data Localization Suite (DLS)."
+    />
+    <meta name="twitter:image" content="rag-ai-thumbnail.png" />
+    <meta name="twitter:site" content="@DavidJKTofan" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <!-- Thumbnail Image for Social Media -->
+    <link rel="image_src" href="rag-ai-thumbnail.png" />
+
+    <!-- Robots Meta Tag for "noindex" directive -->
+    <meta name="robots" content="noindex,nofollow" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="chat-container">
+      <div id="chat"></div>
+      <div id="user-input-container">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Type your query"
+          maxlength="500"
+        />
+        <button id="send-button">Send</button>
+        <div id="loading-icon"></div>
+      </div>
+    </div>
+    <script src="api.js"></script>
+  </body>
+</html>
